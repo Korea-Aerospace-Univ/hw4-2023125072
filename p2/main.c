@@ -5,10 +5,10 @@ int main(void) {
 	char a;
 
 	scanf("%d", &n);//입력될 문자 개수 입력
-
+	getchar();//문자 입력 받을 때, enter도 입력 값으로 인식하기 때문에 getchar()로 enter를 입력 값에 넣지않게 한다.
 	for (int i = 0; i < n ; i++)/*i를0부터 n미만까지 반복한다.*/ {
 	
-		scanf(" %c", &a); //문자 입력
+		scanf("%c", &a); //문자 입력
 		
 		if (a >= 'a' && a<='z')/*입력 문자가 소문자인 경우*/ {
 			cnt_num=0; /*숫자 카운트를 0으로 만든다.*/
