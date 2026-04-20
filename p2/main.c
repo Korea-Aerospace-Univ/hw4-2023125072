@@ -17,7 +17,7 @@ int main(void) {
 			
 		
 		}
-		if (a >= '1' && a < '9') {
+		if (a >= '1' && a <= '9') {
 			cnt_char=0;
 
 			cnt_num++;
